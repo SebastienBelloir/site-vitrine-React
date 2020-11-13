@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../styles';
 import Toggle from './Toggle';
-import { animateSharedLayout } from 'framer-motion';
+import { AnimateSharedLayout } from 'framer-motion';
 import { UseScroll } from "./UseScroll";
 import { scrollReveal } from "../animation";
 
@@ -16,7 +16,7 @@ const FaqSection = () => {
             animate={controls}
             initial="hidden">
             <h2>Any questions <span>FAQ</span></h2>
-            <animateSharedLayout>
+            <AnimateSharedLayout>
                 <Toggle title="How Do I Start ?">
                     <div className="question">
                         <div className="answer">
@@ -54,7 +54,7 @@ const FaqSection = () => {
                         </div>
                     </div>
                 </Toggle>
-            </animateSharedLayout>
+            </AnimateSharedLayout>
         </Faq>
     )
 }
